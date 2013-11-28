@@ -3,7 +3,6 @@ require 'rails/generators/erb'
 module Rails
   module Generators
    class ResourceTemplateGenerator < Erb::Generators::Base
-      argument :actions, type: :array, default: [], banner: "action action"
       source_root File.expand_path("../templates", __FILE__)
 
       def create_resource_template_files
