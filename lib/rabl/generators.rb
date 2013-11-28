@@ -3,5 +3,5 @@ require 'rabl'
 
 require 'rabl/generators/version'
 
-require_relative '../rails/generators/resource_generator'
-require_relative '../rails/generators/resource_template_generator'
+require File.expand_path('../../rails/generators/resource_generator', __FILE__)
+require File.expand_path('../../rails/generators/resource_template_generator', __FILE__)

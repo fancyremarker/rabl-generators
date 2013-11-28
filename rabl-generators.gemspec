@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Frank Macreery"]
   s.email       = ["frank@macreery.com"]
-  s.homepage    = "http://github.com/fancyremarker/rabl-rails-generators"
+  s.homepage    = "http://github.com/fancyremarker/rabl-generators"
   s.summary     = "Rabl generators for Rails resources"
   s.description = "Rabl generators for Rails resources"
   s.licenses    = ["MIT"]
