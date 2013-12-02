@@ -3,6 +3,7 @@ require 'test/unit'
 require 'rails/all'
 require 'rails/generators'
 require 'rails/generators/test_case'
+require 'rabl/generators'
 
 class TestApp < Rails::Application
   config.root = File.dirname(__FILE__)
@@ -28,5 +29,3 @@ def copy_routes
   FileUtils.mkdir_p(destination)
   FileUtils.cp File.expand_path(routes), destination
 end
-
-require 'rails/generators/rails/resource/resource_generator'
