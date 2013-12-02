@@ -16,6 +16,6 @@ class Rails::Generators::ResourceTemplateGeneratorTest < Rails::Generators::Test
     run_generator
     assert_file "app/views/accounts/show.rabl", %r(object @account)
     assert_file "app/views/accounts/index.rabl", %r(collection @accounts)
-    assert_not_empty Dir.glob(File.join(Rails.root, "db/migrate/*create_account*"))
+    assert_not_equal [], Dir.glob(File.join(Rails.root, "db/migrate/*create_account*"))
   end
 end
