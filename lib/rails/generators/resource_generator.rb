@@ -7,8 +7,8 @@ module Rails
     class ResourceGenerator < ModelGenerator
       include ResourceHelpers
 
-      hook_for :resource_template, :default => true  do |template|
-        invoke template, [ controller_name, options[:actions] ]
+      hook_for :resource_template, :default => true  do |generator|
+        invoke generator, [ controller_name, options[:actions] ]
       end
     end
   end

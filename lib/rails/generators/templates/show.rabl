@@ -1,2 +1,2 @@
-object @<%= class_name.underscore %>
+object @<%= class_name.singularize.underscore %>
 attributes :id

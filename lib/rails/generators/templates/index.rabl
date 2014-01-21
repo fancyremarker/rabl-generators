@@ -1,2 +1,2 @@
-collection @<%= class_name.underscore.pluralize %> => :<%= class_name.underscore.pluralize %>
+collection @<%= class_name.pluralize.underscore %> => :<%= class_name.pluralize.underscore %>
 attributes :id
