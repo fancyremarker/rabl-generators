@@ -14,12 +14,12 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = ">= 1.3.6"
 
-  s.add_dependency "rabl",          [">= 0.8", "< 0.10"]
-  s.add_dependency "activesupport", [">= 3.1", "< 4.1"]
-  s.add_dependency "actionpack",    [">= 3.1", "< 4.1"]
-  s.add_dependency "railties",      [">= 3.1", "< 4.1"]
+  s.add_dependency "rabl",          [">= 0.8"]
+  s.add_dependency "activesupport", [">= 3.1"]
+  s.add_dependency "actionpack",    [">= 3.1"]
+  s.add_dependency "railties",      [">= 3.1"]
 
-  s.add_development_dependency "rails",   [">= 3.1", "< 4.1"]
+  s.add_development_dependency "rails",   [">= 3.1"]
   s.add_development_dependency "bundler", "~> 1.2"
   s.add_development_dependency "rake"
   s.add_development_dependency 'appraisal', '>= 0.3.8'
