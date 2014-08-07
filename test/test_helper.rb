@@ -19,7 +19,11 @@ Rails.application.config.root = Rails.root
 
 # Call configure to load the settings from
 # Rails.application.config.generators to Rails::Generators
-Rails::Generators.configure! Rails.application.config.generators
+# Rails::Generators.configure! Rails.application.config.generators
+# NO WAIT!
+# run_generators_blocks(app) - before #configure! breaks ModelGenerator
+# see: https://github.com/rails/rails/blob/master/railties/lib/rails/engine.rb#L456
+Rails.application.load_generators
 
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
